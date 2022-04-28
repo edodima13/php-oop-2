@@ -1,17 +1,7 @@
 <?php
 
-class Product{
+require_once __DIR__.'/models/product.php';
 
-    public $name;
-    public $image;
-    public $price;
-    public $description;
+$product = new Product ('croccantini','https://www.tigota.it/media/catalog/product/b/i/big_353358_842564_01_egfwomkyvyeqgciq.jpg?quality=60&fit=bounds&height=700&width=700&canvas=700:700',30,'croccantini al gusto di pollo');
 
-    public function __construct($name ,$image ,$price , $description){
-        $this-> name = $_name;
-        $this-> image = $_image;
-        $this-> price = $_price;
-        $this-> description = $_description;
-    }
-
-}
+var_dump($product);
