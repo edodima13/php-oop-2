@@ -2,7 +2,7 @@
 
 class Cart{
 
-    public $products =[];
+    public $products = [];
 
     public function addItem($product, $quantity){
 
